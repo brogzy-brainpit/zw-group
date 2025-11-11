@@ -100,7 +100,7 @@ function Section1({preLoaderOut}) {
  
    
   return (
-    <div className='bg-brand-text-dark min-h-svh  single-vimeo-background relative w-full h-screen overflow-hidden single-vimeo-background'>
+    <div className='bg-brand-text-dark  single-vimeo-background relative w-full h-svh overflow-hidden single-vimeo-background'>
       {/* <LandingVideo preLoaderOut={preLoaderOut} link={"/videos/hero.mp4"}/> */}
      <MotionImage transition={{duration:2.8,delay:0.4,ease:[1, 0.24, 0.80, 1]}} initial={{scale:1.3}} animate={{scale:preLoaderOut?1:1.3}} exit={{scale:1.3}}
   src={hero}
