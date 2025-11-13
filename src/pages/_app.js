@@ -10,6 +10,7 @@ import "../styles/embla.css";
 import "../styles/menu.css";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
+import Script from "next/script";
 
 const Sans = DM_Sans({
   subsets: ["latin"],
@@ -58,6 +59,21 @@ export default function MyApp({ Component, pageProps }) {
         className={`${Sans.variable} ${local.variable} ${lora.variable} ${epilogue.variable}`}
       >
         <Component {...pageProps} />
+            {/* Brevo Conversations widget */}
+      <Script id="brevo-chat" strategy="afterInteractive">
+        {`
+          (function(d, w, c) {
+              w.BrevoConversationsID = '68ae05334275e2d8ec042eb2';
+              w[c] = w[c] || function() {
+                  (w[c].q = w[c].q || []).push(arguments);
+              };
+              var s = d.createElement('script');
+              s.async = true;
+              s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+              if (d.head) d.head.appendChild(s);
+          })(document, window, 'BrevoConversations');
+        `}
+      </Script>
         <Footer />
       </div>
     </AnimatePresence>

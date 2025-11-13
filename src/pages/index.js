@@ -8,6 +8,10 @@ import { useEffect, useState } from "react";
 import Section2 from '@/components/Section2';
 import Section3 from '@/components/Section3';
 import Section4 from '@/components/Section4';
+import Section5 from '@/components/Section5';
+import FAQS from '@/components/FAQS';
+import Newsletter from '@/components/Newsletter';
+import NewsletterModal from '@/components/NewsletterModal';
 
 
 function PageContent() {
@@ -30,11 +34,15 @@ function PageContent() {
     {isLoading &&  <Preloader key={'preloader'}/>}
      {/* <Preloader key={'preloader'}/> */}
     </AnimatePresence>
+    <NewsletterModal/>
       <Header preLoaderOut={preLoaderOut}/>
       <Section1 preLoaderOut={preLoaderOut}/>
       <Section2/>
       <Section3/>
       <Section4/>
+      <Section5/>
+      <FAQS/>
+      <Newsletter/>
     </SmoothScroll>
            
     
