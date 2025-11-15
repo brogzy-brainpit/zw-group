@@ -4,6 +4,10 @@
 [data-scroll-container] {
   overflow-y: auto !important; 
 } */
+.text-stroke {
+  -webkit-text-stroke: 0.6px white; /* width and color of stroke */
+  /* -webkit-text-fill-color: transparent;  */
+}
 
 svg:not(:root) {
     overflow: hidden;

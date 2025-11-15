@@ -56,20 +56,47 @@ function Header({preLoaderOut}) {
     <>
       <AnimatePresence mode='wait'>
     {isOpen && 
-    <motion.div initial={{opacity:0}} exit={{opacity:0}} animate={{opacity:isOpen?1:0}} className='z-[2] fixed top-0 right-0 w-full h-svh backdrop-blur-lg bgred-600'>
+    <motion.div initial={{opacity:0}} exit={{opacity:0}} animate={{opacity:isOpen?1:0}} className='lg:hidden z-[2] fixed top-0 right-0 w-full h-svh backdrop-blur-lg bgred-600'>
     <div className='px-5 pt-[12em] w-[80%] h-svh bgred-200'>
-   <div className='flex flex-col gap-2 mix-blend-difference '>
+  <motion.div
+  className="flex flex-col gap-2 mix-blend-difference"
+  initial="initial"
+  exit="exit"
+  animate="animate"
+  variants={{
+    animate: {
+      transition: {
+        staggerChildren: 0.1, // delay between each link
+      }
+    },
+    exit: {
+      transition: {
+        staggerChildren: 0.15, // delay between each link
+      }
+    }
+  }}
+>
     {Links.map(({ title, url }) => (
-              <Link scroll={false}
-                key={title}
-                className="mix-blend-difference cursor-pointer text-heading2 font-custom text-brand-text text-links capitalize"
-                href={`/${url}`}
-              >
-            {title}
-              </Link>
+              <motion.div
+  variants={{
+    initial: { y: 30, opacity: 0 },
+    exit: { y: 30, opacity: 0 },
+    animate: { y: 0, opacity: 1, transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1] } }
+  }}
+>
+  <Link
+    scroll={false}
+    key={title}
+    href={`/${url}`}
+    className="mix-blend-difference cursor-pointer text-heading1 text-stroke font-custom text-links capitalize"
+  >
+    {title}
+  </Link>
+</motion.div>
+
 
             ))}
-   </div>
+   </motion.div>
   </div>
 </motion.div>
 }

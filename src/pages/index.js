@@ -24,7 +24,7 @@ function PageContent() {
     setIsLoading(false)
     document.body.style.cursor="default"
     window.scrollTo({top:0})
-    }, 1400);
+    }, 2400);
     return ()=>clearTimeout(timer)
   },[])
   return (

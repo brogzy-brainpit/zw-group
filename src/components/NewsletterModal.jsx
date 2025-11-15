@@ -8,7 +8,7 @@ export default function NewsletterModal() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    const timer = setTimeout(() => setOpen(true), 5000); // show after 5s
+    const timer = setTimeout(() => setOpen(true), 15000); // show after 5s
     return () => clearTimeout(timer);
   }, []);
 
