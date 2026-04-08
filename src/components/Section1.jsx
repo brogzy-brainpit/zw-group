@@ -115,12 +115,16 @@ function Section1({preLoaderOut}) {
     <div className='col-span-8 bg-slate500 flex justify-center'>
            <h2 className={'text-left font-custom text-heading1 font-black text-white leading-[1.1] mb-2 lg:mb-0'}>
           <SlideUpText delay={.02} initialDelay={1} center={false}  preLoaderOut={preLoaderOut} gap='.2em'
-           text={"Expert Care For Your Body's Recovery"}/>
+           text={"Elevate Your Car With Precision Detailing"}/>
+           
+
+
+         
            </h2>
            </div>
   <div className="col-span-4 bg-pink900">
      <Paragraph className={'flex text-left mb-4 text-white'}>
-          <SlideUpText initialDelay={1} delay={0.002}  center={false}  preLoaderOut={preLoaderOut} gap='8px' text={"ZW Vehicle Group — engineered semi-trailers & trucks built to carry more, last longer, and arrive on time."}/>
+          <SlideUpText initialDelay={1} delay={0.002}  center={false}  preLoaderOut={preLoaderOut} gap='8px' text={`Shine Carwash Mobile — delivers meticulous interior and exterior detailing designed to restore shine, comfort, and long-lasting vehicle appeal.`}/>
 
               {/* ZW Vehicle Group — engineered semi-trailers & trucks built to carry more, last longer, and arrive on time. */}
             </Paragraph>
@@ -176,7 +180,7 @@ function Section1({preLoaderOut}) {
             playsInline
             className=" blur-x z-[5] absolute inset-0 top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2  w-[100%] h-[100vh] object-cover"
           >
-            <source src="https://img.waimaoniu.net/2044/202501071514140698.mp4" type="video/mp4" />
+            <source src="/videos/hero.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:1.6,duration:0.6,ease}}}  exit={{scale:0,transition:{delay:0.1,duration:0.6,ease}}}  onClick={()=>{setPlay(!play)}} className=' z-10 absolute cursor-pointer top-5 right-5 flex items-center justify-center h-[4em] w-[4em] rounded-full bg-brand-background text-white'>
