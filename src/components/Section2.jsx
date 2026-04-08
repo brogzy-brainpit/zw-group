@@ -27,7 +27,7 @@ function Section2() {
   return (
  <div ref={ref} className='relative'>
 <Section className={'bg-purple500 min-h-screen h-screen lg:h-fit'}>
-  <BeforeAfterSlider  afterImage={'/images/porscheClean.png'} beforeImage={'/images/porscheDirt.png'}/>
+  {/* <BeforeAfterSlider  afterImage={'/images/porscheClean.png'} beforeImage={'/images/porscheDirt.png'}/> */}
   <GridRow>
      <GridColumn>
         <div className='col-span-full  lg:col-start-6'>
@@ -45,7 +45,7 @@ function Section2() {
               alt="rotate icon"
             />
           </span>
-          {'With intelligent and international manufacturing workshops, Shandong Zhuowei International Trading Co.,ltd . can satisfy with various maunfacturing requirements of products. Every key process is equipped with top welding equipment to complete welding automatically. All of these inject brand new vitality to the company.'.split(' ').map((word)=>{
+          {"At Shine Carwash Mobile, we believe your car deserves the ultimate care and attention. We specialize in transforming vehicles into showroom-quality . Whether you’re looking for a quick refresh or an intensive deep clean.".split(' ').map((word)=>{
             return (
           <span className=''>{word}</span>
 

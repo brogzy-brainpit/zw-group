@@ -53,7 +53,7 @@ function SlideUpElement({
       } items-center ${className}`}
     >
       {React.Children.map(children, (child, index) => (
-        <span key={index} className="inline-block overflow-hidden">
+        <span key={index} className="inline-block overflow-hidden px-[2px]">
           <motion.span variants={item} className="inline-block">
             {child}
           </motion.span>
