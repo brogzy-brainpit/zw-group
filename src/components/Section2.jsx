@@ -10,6 +10,7 @@ import GridColumn from '@/layout/GridColumn'
 import Heading2 from '@/typography/Heading2'
 import CustomBtn from './CustomButton'
 import Paragraph from '@/typography/Paragraph'
+import BeforeAfterSlider from './BeforeAfterSlider'
 
 
 function Section2() {
@@ -26,6 +27,7 @@ function Section2() {
   return (
  <div ref={ref} className='relative'>
 <Section className={'bg-purple500 min-h-screen h-screen lg:h-fit'}>
+  <BeforeAfterSlider  afterImage={'/images/hero.png'} beforeImage={'/images/hhero.png'}/>
   <GridRow>
      <GridColumn>
         <div className='col-span-full  lg:col-start-6'>
