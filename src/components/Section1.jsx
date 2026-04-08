@@ -12,7 +12,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import SlideUpText from '@/effects/SlideUpText'
 import { ArrowRightToLine, Plane, Play, Plus, Volume, Volume2Icon, VolumeOff, X } from 'lucide-react'
 import LandingVideo from './LandingVideo'
-import hero from '../../public/images/hhero.png'
+import hero from '../../public/images/hero.png'
 import Logo from './Logo'
 import CustomBtn from './CustomButton'
 import SlideUpElement from '@/effects/SlideUpElement'
@@ -101,25 +101,26 @@ function Section1({preLoaderOut}) {
    
   return (
     <div className='bg-brand-text-dark  single-vimeo-background relative w-full h-svh overflow-hidden single-vimeo-background'>
-      {/* <LandingVideo preLoaderOut={preLoaderOut} link={"/videos/hero.mp4"}/> */}
-     <MotionImage transition={{duration:2.8,delay:0.4,ease:[1, 0.24, 0.80, 1]}} initial={{scale:1.3}} animate={{scale:preLoaderOut?1:1.3}} exit={{scale:1.3}}
+      <LandingVideo preLoaderOut={preLoaderOut} link={"/videos/hero.mp4"}/>
+     {/* <MotionImage transition={{duration:2.8,delay:0.4,ease:[1, 0.24, 0.80, 1]}} initial={{scale:1.3}} animate={{scale:preLoaderOut?1:1.3}} exit={{scale:1.3}}
   src={hero}
   fill
   className="object-cover object-[50%_40%]"
   alt=""
-/>
+/> */}
 <div className='absolute inset-0 w-full h-full bg-black/55'/>
  <Section className={'relative z-[1] h-full w-full pt'} >
  <GridRow className='py-6'>
 <GridColumn className={' border-b border-brand-background/95 py-4'}>
     <div className='col-span-8 bg-slate500 flex justify-center'>
-           <Heading1 className={'text-left text-white leading-[1] mb-2 lg:mb-0'}>
-          <SlideUpText center={false}  preLoaderOut={preLoaderOut} gap='8px' text={"Tractor-Truak unlimited Power, leading the Future"}/>
-           </Heading1>
+           <h2 className={'text-left font-custom text-heading1 font-black text-white leading-[1.1] mb-2 lg:mb-0'}>
+          <SlideUpText delay={.02} initialDelay={1} center={false}  preLoaderOut={preLoaderOut} gap='.2em'
+           text={"Expert Care For Your Body's Recovery"}/>
+           </h2>
            </div>
   <div className="col-span-4 bg-pink900">
      <Paragraph className={'flex text-left mb-4 text-white'}>
-          <SlideUpText delay={0.04}  center={false}  preLoaderOut={preLoaderOut} gap='8px' text={"ZW Vehicle Group — engineered semi-trailers & trucks built to carry more, last longer, and arrive on time."}/>
+          <SlideUpText initialDelay={1} delay={0.002}  center={false}  preLoaderOut={preLoaderOut} gap='8px' text={"ZW Vehicle Group — engineered semi-trailers & trucks built to carry more, last longer, and arrive on time."}/>
 
               {/* ZW Vehicle Group — engineered semi-trailers & trucks built to carry more, last longer, and arrive on time. */}
             </Paragraph>
@@ -133,7 +134,7 @@ function Section1({preLoaderOut}) {
     <div className='col-span-full bg-slate500  flex items-end w-full '>
       <div className='flex flex-wrap w-full' >
 
-          <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:3.5,duration:0.6,ease}}}  exit={{scale:0,transition:{delay:0.1,duration:0.6,ease}}} className='flex flex-wrap w-full'>
+          <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:2,duration:0.6,ease}}}  exit={{scale:0,transition:{delay:0.1,duration:0.6,ease}}} className='flex flex-wrap w-full'>
   {/* <SlideUpElement className='w-full flex-nowrap bg-slate-600' initialDelay={3.5} delay={0.06} margin='-30px' gap='4px' once={true} > */}
    {/* button 001 */}
     <CustomBtn className='flex-1 lg:flex-none mr-2.5 flex items-center  whitespace-nowrap border border-brand-background bg-brand-background' href='/'>

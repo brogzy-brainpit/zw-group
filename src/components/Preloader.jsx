@@ -1,21 +1,8 @@
 import React, { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Palmtree, Plane, PlaneIcon, PlaneLanding, PlaneLandingIcon, Umbrella } from 'lucide-react'
-import Link from 'next/link'
 
 function Preloader() {
-  const preAnimate={
-    initial:{
-      opacity:1
-    }, 
-    enter:{
-      opacity:1
-    }, 
-    exit:{
-      opacity:0
-    }
-  }
- 
+
 // const AnimateSvg = {
 //   initial: {
 //     pathLength: 1 // ⬅️ start invisible
@@ -29,7 +16,6 @@ function Preloader() {
 //     transition: { duration: 2, ease: 'easeInOut' }
 //   })
 // }
-
 
 const AnimateSvg = {
   initial: {
@@ -48,6 +34,7 @@ const AnimateSvg = {
     
   })
 }
+
   return (
     <motion.div  className='z-preloader fixed top-0 left-0 bg-slate600 h-screen w-full'>
       <div className="relative w-full h-full">

@@ -18,24 +18,25 @@ function PageContent() {
    const [isLoading,setIsLoading]=useState(true)
    const [preLoaderOut,setPreLoaderOut]=useState(false)
 
-  useEffect(()=>{
+ useEffect(()=>{
 
    const timer=  setTimeout(() => {
-    setIsLoading(false)
+    setPreLoaderOut(true)
+    // setIsLoading(false)
     document.body.style.cursor="default"
     window.scrollTo({top:0})
-    }, 2400);
+    
+    }, 1000);
     return ()=>clearTimeout(timer)
   },[])
   return (
     <SmoothScroll>
 
-    <AnimatePresence initial={false} mode="wait" onExitComplete={()=>{setPreLoaderOut(true)}}>
+    {/* <AnimatePresence initial={false} mode="wait" onExitComplete={()=>{setPreLoaderOut(true)}}>
     {isLoading &&  <Preloader key={'preloader'}/>}
-     {/* <Preloader key={'preloader'}/> */}
-    </AnimatePresence>
+    </AnimatePresence> */}
+
     <NewsletterModal/>
-      <Header preLoaderOut={preLoaderOut}/>
       <Section1 preLoaderOut={preLoaderOut}/>
       <Section2/>
       <Section3/>
