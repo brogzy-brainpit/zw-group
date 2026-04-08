@@ -36,7 +36,7 @@ function PageContent() {
     {isLoading &&  <Preloader key={'preloader'}/>}
     </AnimatePresence> */}
 
-    <NewsletterModal/>
+    {/* <NewsletterModal/> */}
       <Section1 preLoaderOut={preLoaderOut}/>
       <Section2/>
       <Section3/>
