@@ -26,7 +26,7 @@ export default function Section4() {
         className='relative flex items-center justify-center min-h-screen overflow-hidden'
         style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
         >
-            <div className='border-none absolute inset-0  z-[9] top0 w-full h-[120%] bg-black bg-opacity-75'>
+            <div className='border-none absolute inset-0  z-[9] top0 w-full h-[120%] bg-black bg-opacity-45'>
 
             </div>
         {/* <div className='relative z-10 p-20 mix-blend-difference  text-white w-full h-full flex flex-col justify-between'>
@@ -93,7 +93,7 @@ export default function Section4() {
 {/* </section> */}
                 <div className=' fixed top-[-10vh] left-0 h-[120vh] w-full'>
             <motion.div style={{y}} className='relative w-full h-full'>
-            <Image src={'https://img.waimaoniu.net/2044/2044-202501101727057743.jpg'} fill alt="image" style={{objectFit: "cover"}}/>
+            <Image src={'/images/shineBus.webp'} fill alt="image" style={{objectFit: "cover"}}/>
             </motion.div>
         </div>
         </div>

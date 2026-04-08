@@ -26,12 +26,20 @@ function Section3() {
 
 const slides =[
  
- {text:' Bulk Cement Trailer',reverse:false,
-      url:'#',img:'https://img.waimaoniu.net/2044/2044-202510301558219244.jpg?x-oss-process=image/format,webp',y:-70,desc:"The bulk cement trailer is suitable for the transportation and air pressure unloading of dry materials such as fly ash, cement, lime powder and ore powder with a particle diameter of not more than 0.1mm. When the discharge height reaches 15m, the horizontal conveying distance can reach 5m. "
-    }, {text:'hot sale tri axle semi fuel tanker trailer',reverse:true,
-      url:'#',img:'https://img.waimaoniu.net/2044/2044-202309071423402448.jpg?x-oss-process=image/format,webp',y:-120,desc:"ZW Group fuel tanker trailer can be designed in any capacities: 30 cubics, 40 cubics, 50 cubics, etc. Our fuel tanker trailer use different materials: carbon steel, stainless steel, aluminium alloy."
+ {text:'Exterior Valet',reverse:false,
+      duration:'2-2.5 Hrs',
+      img:'/images/exValet.jpg',
+      y:-70,
+      desc:"The bulk cement trailer is suitable for the transportation and air pressure unloading of dry materials such as fly ash, cement, lime powder and ore powder with a particle diameter of not more than 0.1mm. When the discharge height reaches 15m, the horizontal conveying distance can reach 5m. "
+    },
+     {text:'Interior Valet',
+      reverse:true,
+      duration:'2-2.5 Hrs',
+      img:'/images/inValet.jpeg',
+      y:-120,
+      desc:"ZW Group fuel tanker trailer can be designed in any capacities: 30 cubics, 40 cubics, 50 cubics, etc. Our fuel tanker trailer use different materials: carbon steel, stainless steel, aluminium alloy."
     }, {text:'safety regulations for oil tank semi trailers',reverse:false,
-      url:'#',img:'https://img.waimaoniu.net/2044/2044-202010161830203602.jpg?x-oss-process=image/format,webp',y:-170,desc:"1.The oil tank semi-trailer should have a reliable grounding device and a protective device that forms a static conductive path between the oil tank semi-trailer and the liquid equipment."
+      duration:'4 Hrs',img:'https://img.waimaoniu.net/2044/2044-202010161830203602.jpg?x-oss-process=image/format,webp',y:-170,desc:"1.The oil tank semi-trailer should have a reliable grounding device and a protective device that forms a static conductive path between the oil tank semi-trailer and the liquid equipment."
     }
   ]
   return (
@@ -40,31 +48,31 @@ const slides =[
         <GridColumn>
           {/* col1 */}
       <div className='col-span-full lg:sticky lg:top-5  lg:mb-giant lg:col-span-4 bgred-400'>
-        <Heading2  className="font-bold uppercase font-custom text-neutral-200">
-            our <br/> products
-        </Heading2>
+        <h2  className="font-bold text-heading1 uppercase font-custom text-neutral-200">
+            our <br/> Services
+        </h2>
     </div> 
      {/* col2 */}
     <div className='col-span-full  lg:col-start-5 lg:col-span8 lg:mb-giant bgpurple-600'>
     <div className='grid grid-cols-8 gap-[1.25rem] lg:gap-[2.5rem] bg-purple200 '>
     <div className=' col-span-5 lg:col-span-4'>
 <Paragraph className={'mb-para text-neutral-200'}>
- No matter where you are located, zw-trailer can handle all of your trucks needs.
+ No matter how dirty your vehicle is, Shine Carwash Mobile can handle all your car detailing needs.
 </Paragraph>
 
 
     </div>
      <div className='col-span-full lg:col-span-4 col-start-4'>
         
-    <Heading2 className="!mt-0 font-custom text-neutral-200">
+    <h2 className="!mt-0 text-heading2 font-custom text-neutral-200">
     <SlideUpElement once={false} margin='-100px' gap='6px' >
-    {'We don’t just make vehicles — we build confidence. With advanced engineering, durable materials, and global support, ZW stands as a trusted name in heavy-duty transport solutions.'.split(' ').map((word)=>{
+    {"At Milans Detailing & Valeting, we deliver top-tier car care with precision, from quick refreshes to deep cleaning, paint correction, and ceramic coating.".split(' ').map((word)=>{
       return (
     <span className=''>{word}</span>
       )
     })}
   </SlideUpElement>
-    </Heading2>
+    </h2>
 
 
     </div>

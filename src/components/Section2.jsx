@@ -10,7 +10,6 @@ import GridColumn from '@/layout/GridColumn'
 import Heading2 from '@/typography/Heading2'
 import CustomBtn from './CustomButton'
 import Paragraph from '@/typography/Paragraph'
-import BeforeAfterSlider from './BeforeAfterSlider'
 
 
 function Section2() {
@@ -26,10 +25,8 @@ function Section2() {
  
   return (
  <div ref={ref} className='relative'>
-<Section className={'bg-purple500 min-h-screen h-screen lg:h-fit'}>
-  {/* <BeforeAfterSlider  afterImage={'/images/porscheClean.png'} beforeImage={'/images/porscheDirt.png'}/> */}
-  <GridRow>
-     <GridColumn>
+<Section className={'h-svh'}>
+     <GridColumn className={'h-full bgred-700'}>
         <div className='col-span-full  lg:col-start-6'>
           {/* animated-line */}
           <motion.div className='origin-left h-[1px] lg:h-[2px] bg-neutral-900 w-full'  initial={{scaleX:0}} whileInView={{scaleX:1}} viewport={{ once: false }} transition={{duration:0.6,}} />
@@ -45,7 +42,7 @@ function Section2() {
               alt="rotate icon"
             />
           </span>
-          {"At Shine Carwash Mobile, we believe your car deserves the ultimate care and attention. We specialize in transforming vehicles into showroom-quality . Whether you’re looking for a quick refresh or an intensive deep clean.".split(' ').map((word)=>{
+          {'we believe your car deserves the ultimate care and attention. We specialize in transforming vehicles into showroom-quality . Whether you’re looking for a quick refresh or an intensive deep clean.'.split(' ').map((word)=>{
             return (
           <span className=''>{word}</span>
 
@@ -54,10 +51,8 @@ function Section2() {
         </SlideUpElement>
          </Heading2>
           </div>
-      </GridColumn>
 
-<GridColumn className={'bgpurple-600'}>
-<div className='col-span-full lg:col-span-8'>
+          <div className='col-span-full lg:col-span-8'>
 <div className='flex flex-wrap'>
   {/* <SlideUpElement delay={0.2} margin='-130px' gap='4px' once={false} > */}
    {/* button 001 */}
@@ -85,11 +80,11 @@ function Section2() {
 </Paragraph>
 
 </div>
+      </GridColumn>
+
+
  
 
-</GridColumn>
-
-</GridRow>
 </Section>
 
  </div>
