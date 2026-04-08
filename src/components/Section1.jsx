@@ -10,12 +10,13 @@ import Image from 'next/image'
 import Heading2 from '@/typography/Heading2'
 import { AnimatePresence, motion } from 'framer-motion'
 import SlideUpText from '@/effects/SlideUpText'
-import { ArrowRightToLine, Plane, Play, Plus, Volume, Volume2Icon, VolumeOff, X } from 'lucide-react'
+import { ArrowRightToLine, Phone, Plane, Play, Plus, Volume, Volume2Icon, VolumeOff, X } from 'lucide-react'
 import LandingVideo from './LandingVideo'
 import hero from '../../public/images/hero.png'
 import Logo from './Logo'
 import CustomBtn from './CustomButton'
 import SlideUpElement from '@/effects/SlideUpElement'
+import CalModalButton from './CalModalButton'
 
 function Section1({preLoaderOut}) {
    const [play,setPlay]=useState(false)
@@ -124,7 +125,7 @@ function Section1({preLoaderOut}) {
            </div>
   <div className="col-span-5 lg:col-span-4 bg-pink900">
      <Paragraph className={'flex text-left mb-4 text-white'}>
-          <SlideUpText initialDelay={1} delay={0.002}  center={false}  preLoaderOut={preLoaderOut} gap='8px' text={`Shine Carwash Mobile — delivers meticulous interior and exterior detailing designed to restore shine and comfort. we come to you. ceramic coating. paint correction.`}/>
+          <SlideUpText initialDelay={1} delay={0.002}  center={false}  preLoaderOut={preLoaderOut} gap='8px' text={`Shine Carwash Mobile — delivers meticulous interior and exterior detailing designed to restore shine, comfort, and long-lasting vehicle appeal.`}/>
 
               {/* ZW Vehicle Group — engineered semi-trailers & trucks built to carry more, last longer, and arrive on time. */}
             </Paragraph>
@@ -141,15 +142,21 @@ function Section1({preLoaderOut}) {
           <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:2,duration:0.6,ease}}}  exit={{scale:0,transition:{delay:0.1,duration:0.6,ease}}} className='flex flex-wrap w-full'>
   {/* <SlideUpElement className='w-full flex-nowrap bg-slate-600' initialDelay={3.5} delay={0.06} margin='-30px' gap='4px' once={true} > */}
    {/* button 001 */}
-    <CustomBtn className='flex-1 lg:flex-none mr-2.5 flex items-center  whitespace-nowrap border border-brand-background bg-brand-background' href='/'>
-    <span className="p-4 hidden lg:block">Learn More about Us</span>
-     <span className="inline-fle p-4 block lg:hidden">Learn More</span>
-     <span className="inline-flex p-4">
-     <ArrowRightToLine className="w-5 h-5 p text-white" />
+    <CustomBtn className='flex-1 lg:flex-none mr-2.5 flex items-center  whitespace-nowrap border border-brand-background bg-brand-background'>
+   <CalModalButton>
+    <div className='flex w-full items-center'>
+    <span className="p-4  hidden lg:block">Book Appointment with us</span>
+     <span className="inline-flex flex-1 p-4  lg:hidden">Book Appointment</span>
+     <span className="inline-flex p-4 items-center justify-center">
+     {/* <ArrowRightToLine className="w-5 h-5 p text-white" /> */}
+    <Phone className="h-5 w-5 inline-flex text-white"/>
      </span>
+
+    </div>
+    </CalModalButton>
      </CustomBtn>
      {/* button 002 */}
- <div onClick={playVideo} className="cursor-pointer font-body ml-2.5 flex items-center border border-brand-background bg-transparent whitespace-nowrap">
+ <div onClick={playVideo} className="cursor-pointer text-button font-body ml-2.5 flex items-center border border-brand-background bg-transparent whitespace-nowrap">
   <span className="inline-fle p-4 lg:block hidden text-white">Play Video</span>
   <span className="inline-flex p-4">
   <Play className="w-5 h-5 text-brand-background fill-brand-background" fill={true}  />
