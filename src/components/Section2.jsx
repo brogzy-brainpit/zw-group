@@ -56,7 +56,7 @@ function Section2() {
 <div className='flex flex-wrap'>
   {/* <SlideUpElement delay={0.2} margin='-130px' gap='4px' once={false} > */}
    {/* button 001 */}
-    <CustomBtn className='flex-1 lg:flex-none mr-2.5 flex items-center  whitespace-nowrap border border-brand-bacbg-brand-background bg-brand-background' href='/'>
+    <CustomBtn className='flex-1 lg:flex-none mr-2.5 flex items-center  whitespace-nowrap border border-brand-bacbg-brand-background bg-brand-background' href='/about'>
     <span className="p-4 hidden lg:block">Learn More about Us</span>
      <span className="inline-fle p-4 block lg:hidden">Learn More</span>
      <span className="inline-flex p-4">
