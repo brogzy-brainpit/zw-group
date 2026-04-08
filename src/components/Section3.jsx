@@ -106,7 +106,7 @@ const slides =[
     <div className='col-span-full lg:col-span-4'>
 <Heading2 className=' text-neutral-200'>
 <SlideUpElement margin='-100px' gap='6px' >
-     {'Shizhong district, Jinan City, Shandong Province ID#'.split(' ').map((word)=>{
+     {'250 NE 25th St, Miami, FL 33137, United States ID#'.split(' ').map((word)=>{
       return (
     <span className=''>{word}</span>
       )
