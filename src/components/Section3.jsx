@@ -38,8 +38,8 @@ const slides =[
       img:'/images/inValet.jpeg',
       y:-120,
       desc:"ZW Group fuel tanker trailer can be designed in any capacities: 30 cubics, 40 cubics, 50 cubics, etc. Our fuel tanker trailer use different materials: carbon steel, stainless steel, aluminium alloy."
-    }, {text:'safety regulations for oil tank semi trailers',reverse:false,
-      duration:'4 Hrs',img:'https://img.waimaoniu.net/2044/2044-202010161830203602.jpg?x-oss-process=image/format,webp',y:-170,desc:"1.The oil tank semi-trailer should have a reliable grounding device and a protective device that forms a static conductive path between the oil tank semi-trailer and the liquid equipment."
+    }, {text:'Full Valet',reverse:false,
+      duration:'4 Hrs',img:'/images/rangeRoverWash.jpg',y:-170,desc:"1.The oil tank semi-trailer should have a reliable grounding device and a protective device that forms a static conductive path between the oil tank semi-trailer and the liquid equipment."
     }
   ]
   return (
@@ -178,9 +178,9 @@ const inview = useInView(imgInview,{once:true})
        </div>
      <div className=' my-4 lg:my-0 relative lg:w-[50%] flex justify-between  flex-col lg:px-4 lg:pb-4 bgred-600'>
       
-        <Heading2  className={` ${reverse?'bg-purple600 lg:text-right pt-2':'text-left'} capitalize text-neutral-200 font-custom`}>
+        <h2  className={` ${reverse?'bg-purple600  lg:text-right pt-2':'text-left'} text-heading2 uppercase font-bold apitalize text-neutral-200 font-custom`}>
      {title}
-        </Heading2>
+        </h2>
         <Paragraph  className='font-body leading-tight '>
        {desc}
         </Paragraph>
