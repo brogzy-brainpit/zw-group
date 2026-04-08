@@ -122,7 +122,7 @@ function Section1({preLoaderOut}) {
          
            </h2>
            </div>
-  <div className="col-span-4 bg-pink900">
+  <div className="col-span-5 lg:col-span-4 bg-pink900">
      <Paragraph className={'flex text-left mb-4 text-white'}>
           <SlideUpText initialDelay={1} delay={0.002}  center={false}  preLoaderOut={preLoaderOut} gap='8px' text={`Shine Carwash Mobile — delivers meticulous interior and exterior detailing designed to restore shine, comfort, and long-lasting vehicle appeal.`}/>
 
