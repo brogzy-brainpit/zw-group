@@ -35,12 +35,13 @@ export default function BeforeAfterSlider({
   return (
     <div
       ref={containerRef}
-      className="relative w-full max-w-4xl h-[400px] mx-auto overflow-hidden rounded-2xl"
+      className="relative shadow-xl border-brand-background border-2 w-full max-w-4xl h-[400px] mx-auto overflow-hidden rounded-2xl"
     >
       {/* BEFORE */}
+      
       <Image
       draggable={false}
-        src={beforeImage}
+        src={afterImage}
         alt="Before"
         fill
         className="object-cover"
@@ -49,7 +50,7 @@ export default function BeforeAfterSlider({
       {/* AFTER */}
       <motion.div style={{ clipPath }} className="absolute inset-0">
         <Image draggable={false}
-          src={afterImage}
+          src={beforeImage}
           alt="After"
           fill
           className="object-cover"
@@ -75,10 +76,10 @@ export default function BeforeAfterSlider({
           <div className="absolute left-1/2 -translate-x-1/2 w-[20px] h-full bg-gradient-to-r from-white/40 to-transparent blur-md" />
 
           {/* HANDLE */}
-          <div className="relative z-10 w-10 h-10 rounded-full bg-white/90 backdrop-blur-md shadow-xl flex items-center justify-center border border-white/50">
+          <div className="relative cursor-grab z-10 w-12 h-12 rounded-full bg-brand-background backdrop-blur-md shadow-xl flex items-center justify-center border border-white/50">
             <div className="flex gap-[2px]">
-              <div className="w-[2px] h-4 bg-black/70" />
-              <div className="w-[2px] h-4 bg-black/70" />
+              <div className="w-[2px] h-4 bg-white/70" />
+              <div className="w-[2px] h-4 bg-white/70" />
             </div>
           </div>
 

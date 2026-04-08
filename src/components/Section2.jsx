@@ -27,7 +27,7 @@ function Section2() {
   return (
  <div ref={ref} className='relative'>
 <Section className={'bg-purple500 min-h-screen h-screen lg:h-fit'}>
-  <BeforeAfterSlider  afterImage={'/images/hero.png'} beforeImage={'/images/hhero.png'}/>
+  <BeforeAfterSlider  afterImage={'/images/porscheClean.png'} beforeImage={'/images/porscheDirt.png'}/>
   <GridRow>
      <GridColumn>
         <div className='col-span-full  lg:col-start-6'>
