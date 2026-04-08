@@ -6,7 +6,6 @@ import Heading2 from '@/typography/Heading2'
 import Paragraph from '@/typography/Paragraph'
 import { ArrowRight, ArrowRightCircle } from 'lucide-react'
 import React from 'react'
-import BeforeAfterSlider from './BeforeAfterSlider'
 
 function Section5() {
   const members=[
@@ -46,7 +45,7 @@ function Section5() {
     <div className='bg-0 text-black min-h-screen'>
       <Section>
         <GridColumn>
-          <div className='col-span-4 bg-brand-background text-white lg:col-span-5 flex justify-center items-center flex-col my-4'>
+          <div className='col-span-3 bg-brand-background text-white lg:col-span-4 flex justify-center items-center flex-col my-4'>
             <Paragraph>
               Experts
             </Paragraph>
@@ -55,9 +54,23 @@ function Section5() {
             </Heading1>
             <ArrowRightCircle/>
 </div>
-      <div className='col-span-7 lg:col-span-7'>
-        <BeforeAfterSlider afterImage={'/images/seat01Clean.webp'} beforeImage={'/images/seat01Dirt.png'}/>
+      {members.map(({name,role,comment,img})=>{
+        return (
+          <div className='col-span-3 lg:col-span-4 flex justify-center items-center flex-col my-4'>
+        <img src={img} className='w-[4em] h-[4em] rounded-full shadow-sm'/>
+        <div className='flex flex-col justify-center items-center my-3'>
+          <h2 className='font-custom text-para capitalize font-bold'>{name}</h2>
+          <h2 className='font-body text-para capitalize'>{role}</h2>
+        </div>
+        <p className='text-center w-5/6 font-body text-para'>{comment}</p>
+         <div className='flex justify-center gap-2 items-center my-3'>
+          <img src='images/linkedIn.svg'/>
+          <img src='images/X.svg'/>
+          <img src='images/dribble.svg'/>
+        </div>
       </div>
+        )
+      })}
       
 
         </GridColumn>

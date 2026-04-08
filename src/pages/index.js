@@ -8,14 +8,14 @@ import { useEffect, useState } from "react";
 import Section2 from '@/components/Section2';
 import Section3 from '@/components/Section3';
 import Section4 from '@/components/Section4';
-// import Section5 from '@/components/Section5';
+import Section5 from '@/components/Section5';
 import FAQS from '@/components/FAQS';
 import Newsletter from '@/components/Newsletter';
 import NewsletterModal from '@/components/NewsletterModal';
 
 
 function PageContent() {
-   const [isLoading,setIsLoading]=useState(true)
+  //  const [isLoading,setIsLoading]=useState(true)
    const [preLoaderOut,setPreLoaderOut]=useState(false)
 
  useEffect(()=>{
@@ -39,9 +39,9 @@ function PageContent() {
     {/* <NewsletterModal/> */}
       <Section1 preLoaderOut={preLoaderOut}/>
       <Section2/>
+      <Section5/>
       <Section3/>
       <Section4/>
-      {/* <Section5/> */}
       <FAQS/>
       <Newsletter/>
     </SmoothScroll>
