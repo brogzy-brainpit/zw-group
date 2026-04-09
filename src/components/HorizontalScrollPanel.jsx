@@ -35,10 +35,10 @@ function HorizontalScrollPanel() {
 
   <div className='lg:w-[100vw] p-5 h-screen  flex gap-[2.8em] items-center justify-center text7xl text-black'>
           <div className='flex-1 flex  justify-between flex-col h-full '>
-            <Content color='#D23723' src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
+            <Content color='#D23723' src={'/images/porscheClean.png'} text={'Porsche, 2024'} className=''/>
             <div className='flex w-full items-end  self-end justify-end'>
 
-            <Content src={'/images/porscheClean.png'}  text={'New york, 2008'} className='flelex-col'/>
+            <Content src={'/images/rangeRoverWash.jpg'}  text={'Range R0ver, 2025'} className='flelex-col'/>
             </div>
           </div>
           <div className='flex-1 flex flex-col justify-end h-full '>
