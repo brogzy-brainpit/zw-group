@@ -35,7 +35,7 @@ function HorizontalScrollPanel() {
 
   <div className='lg:w-[100vw] p-5 h-screen  flex gap-[2.8em] items-center justify-center text7xl text-black'>
           <div className='flex-1 flex  justify-between flex-col h-full '>
-            <Content src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
+            <Content color='#D23723' src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
             <div className='flex w-full items-end  self-end justify-end'>
 
             <Content src={'/images/porscheClean.png'}  text={'New york, 2008'} className='flelex-col'/>
@@ -51,10 +51,10 @@ function HorizontalScrollPanel() {
              {/* <img className='my-2 object-cover w-[100%] ' src={'/images/001.png'}/> */}
           </div>
          <div className='flex-1 flex  items-end justify-between flex-col h-full '>
-            <Content src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
+            <Content color='#D23723' src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
             <div className='flex w-full justify-start'>
 
-            <Content src={'/images/porscheClean.png'}  text={'New york, 2008'} className='flelex-col'/>
+            <Content color='#D23723'  src={'/images/porscheClean.png'}  text={'New york, 2008'} className='flelex-col'/>
             </div>
           </div>
         
@@ -77,7 +77,7 @@ function HorizontalScrollPanel() {
              {/* <img className='my-2 object-cover w-[100%] ' src={'/images/001.png'}/> */}
           </div>
          <div className='flex-1 flex  items-end justify-between flex-col h-full '>
-            <Content src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
+            <Content color='#D23723' src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
             <div className='flex w-full justify-start'>
 
             <Content src={'/images/porscheClean.png'}  text={'New york, 2008'} className='flelex-col'/>
@@ -93,7 +93,7 @@ function HorizontalScrollPanel() {
             <Content src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
             <div className='flex w-full items-end  self-end justify-end'>
 
-            <Content src={'/images/porscheClean.png'}  text={'New york, 2008'} className='flelex-col'/>
+            <Content color='#D23723' src={'/images/porscheClean.png'}  text={'New york, 2008'} className='flelex-col'/>
             </div>
           </div>
           <div className='flex-1 flex flex-col justify-end h-full '>
@@ -106,7 +106,7 @@ function HorizontalScrollPanel() {
              {/* <img className='my-2 object-cover w-[100%] ' src={'/images/001.png'}/> */}
           </div>
          <div className='flex-1 flex  items-end justify-between flex-col h-full '>
-            <Content src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
+            <Content color='#D23723' src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
             <div className='flex w-full justify-start'>
 
             <Content src={'/images/porscheClean.png'}  text={'New york, 2008'} className='flelex-col'/>
@@ -128,14 +128,14 @@ function HorizontalScrollPanel() {
 }
 
 
-const Content=({className='',text,src='/images/003.png'})=>{
+const Content=({className='',color='#000',text,src='/images/003.png'})=>{
   return (
     <div   >
             <h2>
               <SlideUpText text={text} preLoaderOut={true}/>
             </h2>
-            <img className={` ${className} max-w-[30em] my-2 object-cover  h-[40svh]`} src={src}/>
-            
+            {/* <img className={` ${className} max-w-[30em] my-2 object-cover  h-[40svh]`} src={src}/> */}
+             <ImageEffect color={color} className='max-w-[30em] my-2 object-cover  h-[40svh]' img={src} />
               </div>
   )
 }
