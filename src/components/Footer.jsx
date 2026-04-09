@@ -20,28 +20,19 @@ function footer() {
 
       <section className=' relative mt-4 w-full h-full gap-6 container-section container mx-auto'>
 
-  <div className="flex gap-2 breaker my-6 ">
-  {/* Right side - single 50% item */}
-  <div className="breaker-child  px-4  items-start justify-end md:justify-start flex   w-[68%]  ">
-         <SlideUpText duration={0.5} delay={0.04} className=' text-white font-custom font-bold text-[20px] md:text-[30px] leading-[40px] uppercase' text={'hello@domain.com'}/>  
-          </div>
-            <div className="breaker-child px-4  items-start justify-end flex w-[68%]  ">
-         <SlideUpText duration={0.5} delay={0.04} className=' text-white font-custom font-bold text-[20px] md:text-[30px] leading-[40px] uppercase' text={'+(234)9063260237'}/>  
-          </div>
-          
-        
 
-</div>
 
  <div className="  p-4 grid grid-cols-1 md:grid-cols-3 gap-2  w-full mdw-[50%]">
   {/* Left side - stacked items */}
        {/* <div className={`w-full  items-start gap-2 flex flex-col`}> */}
             <div className={`w-full  -4 rounded-2xl items-end md:items-start justify-between flex gap-[4px] flex-col`}>
          
-         <p  className=' text-white font-body  text-para  leading-para'>general Streen 45-FB</p>
-         <p  className=' text-white font-body  text-para  leading-para'>1017 MT Kaduna</p>
-         <p  className=' text-white font-body  text-para  leading-para'>Nigeria</p>
+         <p  className=' text-white font-body  text-para  leading-para'>250 NE 25th St,</p>
+         <p  className=' text-white font-body  text-para  leading-para'>Miami, FL 33137,</p>
+         <p  className=' text-white font-body  text-para  leading-para'>United States</p>
           </div>
+          
+ 
 
           <div className={`w-full  -4 rounded-2xl items-end md:items-center justify-between flex gap-[2px] flex-col  borde border-brand-accent`}>
 
