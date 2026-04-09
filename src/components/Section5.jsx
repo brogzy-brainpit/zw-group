@@ -46,17 +46,17 @@ function Section5() {
     <div className='bg-0 text-black min-h-screen'>
       <Section>
         <GridColumn>
-          <div className='col-span-4 bg-brand-background text-white lg:col-span-5 flex justify-center items-center flex-col my-4'>
-            <Paragraph>
-              Experts
+          <div className='col-span-4 lg:col-span-6  text-white  flex justify-centr itemscenter flex-col my-4'>
+            <h2 className={'font-custom mb-4 text-heading1 leading-[.9] capitalize text-brand-background'}>
+              The Difference Is In The Details
+            </h2>
+            <Paragraph className={'text-brand-background'}>
+              See the difference precision detailing makes. Every surface restored, every imperfection refined, leaving your vehicle with a clean, polished, and elevated look.
             </Paragraph>
-            <Heading1 className={'capitalize text-white'}>
-              our team
-            </Heading1>
             <ArrowRightCircle/>
 </div>
-      <div className='col-span-7 lg:col-span-7'>
-        <BeforeAfterSlider afterImage={'/images/seat02Clean.webp'} beforeImage={'/images/seat01Dirt.png'}/>
+      <div className='col-span-7 lg:col-span-6'>
+        <BeforeAfterSlider beforeImage={'/images/seat02Clean.png'} afterImage={'/images/seat02Dirt.png'}/>
       </div>
       
 

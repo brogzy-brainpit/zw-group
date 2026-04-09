@@ -24,7 +24,7 @@ function HorizontalScrollPanel() {
 
   })
   const x1= useTransform(scrollYProgress,[0,1],['30%','-66.6667%']);
-  const x= useSpring(x1,{stiffness:120,damping:30,mass:.1});
+  const x= useSpring(x1,{stiffness:300,damping:30,mass:.3});
   return (
    <section ref={ref} className='relative h-[400svh] w-full bg-red400'>
     <div className="sticky top-0 h-screen overflow-hidden">
@@ -43,7 +43,8 @@ function HorizontalScrollPanel() {
           </div>
           <div className='flex-1 flex flex-col justify-end h-full '>
              <h2 className='w-[80%] lg:w-[60%] mb-[3em] text-para leading-[.9] font-custom text-black'>
-              <SlideUpText text={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, asperiores?'} trigger={true}/>
+              {/* <SlideUpText text={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, asperiores?'} trigger={true}/> */}
+            Lorem, Doloremque modi recusandae dolorem odit consectetur asperiores omnis culpa unde ipsam. Expedita, aut. Perspiciatis amet, a nihil aut aperiam expedita earum ea.
             </h2>
             <ImageEffect className='w-[30em] !h-auto' img='/images/001.png' />
             {/* <Content src={'/images/001.png'} text={'Qatar, 2024'} className='w-[30em] !h-auto'/> */}
@@ -62,7 +63,7 @@ function HorizontalScrollPanel() {
 
          
         </div>
-        <div className='lg:w-[100vw] p-5 h-screen  flex gap-[2.8em] items-center justify-center text7xl text-black'>
+        <div className='lg:w-[100vw]  p-5 h-screen hidden lg:flex gap-[2.8em] items-center justify-center text7xl text-black'>
           <div className='flex-1 flex  justify-center items-center flex-col h-full '>
             <Content src={'/images/porscheClean.png'} text={'Qatar, 2024'} className=''/>
            
@@ -132,7 +133,8 @@ const Content=({className='',color='#000',text,src='/images/003.png'})=>{
   return (
     <div   >
             <h2>
-              <SlideUpText text={text} preLoaderOut={true}/>
+              {/* <SlideUpText text={text} preLoaderOut={true}/> */}
+              {text}
             </h2>
             {/* <img className={` ${className} max-w-[30em] my-2 object-cover  h-[40svh]`} src={src}/> */}
              <ImageEffect color={color} className='max-w-[30em] my-2 object-cover  h-[40svh]' img={src} />

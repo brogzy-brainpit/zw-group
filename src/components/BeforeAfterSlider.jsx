@@ -76,7 +76,7 @@ export default function BeforeAfterSlider({
           <div className="absolute left-1/2 -translate-x-1/2 w-[20px] h-full bg-gradient-to-r from-white/40 to-transparent blur-md" />
 
           {/* HANDLE */}
-          <div className="relative z-10 w-10 h-10 rounded-full bg-white/90 backdrop-blur-md shadow-xl flex items-center justify-center border border-white/50">
+          <div className="relative z-14 w-14 h-10 rounded-full bg-white/90 backdrop-blur-md shadow-xl flex items-center justify-center border border-white/50">
             <div className="flex gap-[2px]">
               <div className="w-[2px] h-4 bg-black/70" />
               <div className="w-[2px] h-4 bg-black/70" />
