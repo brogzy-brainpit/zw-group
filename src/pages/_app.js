@@ -52,6 +52,8 @@ const [pageName,setPageName]= useState(router.pathname)
     '/':'welcome',
     '/about':'about us',
     '/contact':'contact',
+    '/faqs':'FAQS',
+    '/gallery':'Gallery [portfolio]',
     '/blog':'blog',
     
    }

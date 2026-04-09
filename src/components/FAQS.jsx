@@ -43,26 +43,26 @@ function FAQS() {
 
 const Questions = () => {
   const QA = [
-    { q: 'how long does trailer production take?',
-      a: 'Our standard trailer production typically takes 4-6 weeks. Complex custom designs may require additional time for precise engineering and fabrication.'
+    { q: 'How much does paint protection film cost?',
+      a: 'The cost of paint protection film varies based on the size of the vehicle and the areas covered. On average, prices range from $500 to $2000 for a full front-end application.'
     },
-     { q: 'Do you offer custom trailer designs?',
-      a: 'Yes, we specialize in custom trailer solutions. Our engineering team works closely with clients to create trailers that meet unique transportation requirements.'
+     { q: 'How long does PPF installation take?',
+      a: 'PPF installation typically takes 1-2 days depending on the size and complexity of the vehicle.'
     },
-     { q: 'what materials do you use?',
-      a: 'We use high-grade steel and aluminium alloys selected for durability, strength, and performance in demanding transportation environments.'
+     { q: 'How long does paint protection film last?',
+      a: 'With proper care, high-quality paint protection film can last 5-10 years before needing replacement.'
     },
-    { q: 'How do you ensure quality?',
-      a: 'Our rigorous quality control process includes multiple inspection stages, stress testing, and final performance verification before delivery.'
+    { q: 'Can I wash my car after PPF installation?',
+      a: 'You can wash your car after PPF installation, but it’s recommended to wait at least 48 hours to allow the film to fully adhere to the paint. After that, you can wash it as usual, but avoid high-pressure washers directly on the edges of the film for the first few weeks.'
     },
-     { q: 'How do you ensure quality?',
-      a: 'Our rigorous quality control process includes multiple inspection stages, stress testing, and final performance verification before delivery.'
+     { q: 'Will PPF change how my car looks?',
+      a: 'No, PPF is designed to be virtually invisible, so it won’t change the appearance of your vehicle.'
     },
      { q: 'What is your warranty?',
-      a: 'we offer a comprehensive warranty covering manufacturing defects. Each trailer comes with a standard 1-year structural guarantee.'
+      a: 'We offer a 10-year warranty on our paint protection film against yellowing, cracking, and peeling under normal conditions.'
     },
-    { q: 'can you handle large orders?',
-      a: 'Our facility is equipped to manage fleet-wide trailer manufacturing with consistent quality and efficient production timelines.'
+    { q: 'can you handle luxury vehicles?',
+      a: 'Yes, we have experience working with a wide range of vehicles, including luxury and exotic cars. We use high-quality materials and techniques to ensure the best results for all our clients.'
     },
       
       

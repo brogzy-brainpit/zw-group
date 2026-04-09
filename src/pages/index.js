@@ -12,6 +12,7 @@ import Section5 from '@/components/Section5';
 import FAQS from '@/components/FAQS';
 import Newsletter from '@/components/Newsletter';
 import NewsletterModal from '@/components/NewsletterModal';
+import HorizontalScrollPanel from '@/components/HorizontalScrollPanel';
 
 
 function PageContent() {
@@ -39,6 +40,7 @@ function PageContent() {
     {/* <NewsletterModal/> */}
       <Section1 preLoaderOut={preLoaderOut}/>
       <Section2/>
+      <HorizontalScrollPanel/>
       <Section5/>
       <Section3/>
       <Section4/>

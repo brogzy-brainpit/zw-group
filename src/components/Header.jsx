@@ -15,11 +15,11 @@ function Header({preLoaderOut}) {
 
     
   const Links = [
-    { title: "Home", url: "about" },
-    { title: "About", url: "about" },
-    { title: "Services", url: "about" },
-    { title: "Blog", url: "about" },
-    { title: "Faq", url: "about" },
+    { title: "About", url: "/about" },
+    { title: "Services", url: "/services" },
+    { title: "Gallery", url: "/gallery" },
+    { title: "Faq", url: "/faqs" },
+    { title: "Contact", url: "/contact" },
   ];
 
     useEffect(()=>{
@@ -109,7 +109,9 @@ function Header({preLoaderOut}) {
 <div className='flex justify-between items-center relative w-full'>
  {/* <div className='w-[10em'>
  </div> */}
+ <Link href={'/'}>
   <Logo preLoaderOut={preLoaderOut} width='100'/>
+ </Link>
 <ul className= " hidden md:flex md:flex-row md:gap-6 mx-aut">
             {Links.map(({ title, url }) => (
               <Link scroll={false}
