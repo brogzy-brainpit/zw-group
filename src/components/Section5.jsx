@@ -56,7 +56,7 @@ function Section5() {
             <ArrowRightCircle/>
 </div>
       <div className='col-span-7 lg:col-span-7'>
-        <BeforeAfterSlider afterImage={'/images/seat01Clean.webp'} beforeImage={'/images/seat01Dirt.png'}/>
+        <BeforeAfterSlider afterImage={'/images/seat02Clean.webp'} beforeImage={'/images/seat01Dirt.png'}/>
       </div>
       
 

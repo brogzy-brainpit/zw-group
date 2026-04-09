@@ -33,12 +33,12 @@ const ease='linear'
      <GridColumn className={' border-b border-brand-background/95 py-4'}>
          <div className='col-span-8 bg-slate500 flex justify-center'>
                 <Heading1 className={'text-left text-brand-text leading-[1] mb-2 lg:mb-0'}>
-               <SlideUpText center={false}  preLoaderOut={preLoaderOut} gap='8px' text={"Tractor-Truak unlimited Power, leading the Future"}/>
+               <SlideUpText center={false}  preLoaderOut={preLoaderOut} gap='8px' text={"Welcome to Shine carwash Mobile, Your Premium Car Detailing Experts"}/>
                 </Heading1>
                 </div>
        <div className="col-span-4 bg-pink900">
           <Paragraph className={'flex text-left mb-4 text-brand-text'}>
-               <SlideUpText delay={0.04}  center={false}  preLoaderOut={preLoaderOut} gap='8px' text={"ZW Vehicle Group — engineered semi-trailers & trucks built to carry more, last longer, and arrive on time."}/>
+               <SlideUpText delay={0.04}  center={false}  preLoaderOut={preLoaderOut} gap='8px' text={"Tailored Services: From interior cleaning to exterior polishing and ceramic coatings, we offer customizable packages to meet your needs. Our goal is to fulfill your satisfaction and give you the best service wherever you are. We come to you"}/>
      
                    {/* ZW Vehicle Group — engineered semi-trailers & trucks built to carry more, last longer, and arrive on time. */}
                  </Paragraph>

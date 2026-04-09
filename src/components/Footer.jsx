@@ -1,7 +1,7 @@
 import SlideUpText from '@/effects/SlideUpText'
 import React from 'react'
 import CustomBtn from './CustomButton'
-import { Facebook, FacebookIcon, Instagram, Linkedin } from 'lucide-react'
+import { Dribbble, Facebook, FacebookIcon, Instagram, Linkedin } from 'lucide-react'
 import SlideUpElement from '@/effects/SlideUpElement'
 import Logo from './Logo'
 
@@ -73,9 +73,9 @@ function footer() {
   {/* Left side - stacked items */}
        <div className={`w-full  items-start gap-2 flex`}>
          
-         <p  className=' text-white font-body  text-para  leading-para uppercase'><FacebookIcon className='w-4 h-4'/></p>
-         <p  className=' text-white font-body  text-para  leading-para uppercase'><Linkedin className='w-4 h-4'/></p>
-         <p  className=' text-white font-body  text-para  leading-para uppercase'><Instagram className='w-4 h-4'/></p>
+         <p  className=' text-white bg-brand-background rounded-full h-12 w-12 flex items-center justify-center font-body  text-para  leading-para uppercase'><Instagram className='w-6 h-6'/></p>
+         <p  className=' text-white bg-brand-background rounded-full h-12 w-12 flex items-center justify-center font-body  text-para  leading-para uppercase'><FacebookIcon fill='#fff' className='w-6 h-6'/></p>
+         <p  className=' text-white bg-brand-background rounded-full h-12 w-12 flex items-center justify-center font-body  text-para  leading-para uppercase'><Dribbble className='w-6 h-6'/></p>
        
 
           </div>
