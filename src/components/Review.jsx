@@ -94,7 +94,7 @@ const Review = () => {
   };
 
   return (
-    <div id="testimonials" className="px-4 text-center max-w-xl mx-auto  py-12">
+    <div id="testimonials" className="px-4 text-center max-w-xl mx-auto overflow-hidden  py-12">
       <h2 
       className="text-heading1 capitalize font-bold mb-4 font-custom leading-[1] text-brand-text dark:text-brand-text-dark transition-all duration-500 ease-in-out">
         Genuine reviews
@@ -105,6 +105,7 @@ const Review = () => {
 
       <AnimatePresence mode="wait" custom={direction}>
         <motion.div
+        className="overflow-hidden"
           key={index}
           custom={direction}
           variants={variants}

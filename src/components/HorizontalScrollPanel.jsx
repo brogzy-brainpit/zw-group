@@ -26,7 +26,7 @@ function HorizontalScrollPanel() {
 
   })
   const x1= useTransform(scrollYProgress,[0,1],[isTabletOrMobile?'0%':'30%','-66.6667%']);
-  const x= useSpring(x1,{stiffness:300,damping:30,mass:.3});
+  const x= useSpring(x1,{stiffness:200,damping:30,mass:.3});
   return (
    <section ref={ref} className='relative h-[400svh] w-full bg-red400'>
     <div className="sticky top-0 h-screen overflow-hidden">
@@ -67,7 +67,7 @@ function HorizontalScrollPanel() {
         </div>
         <div className='lg:w-[100vw] w-[300vw]  p-5 h-screen hidde flex gap-[2.8em] items-center justify-center text7xl text-black'>
           <div className='flex-1 flex  justify-center items-center flex-col h-full '>
-            <Content src={'/images/S/SBoot.jpg'} text={'Qatar, 2024'} className=''/>
+            <Content src={'/images/S/Sboot.jpg'} text={'Florida, 2024'} className=''/>
            
           </div>
           <div className='flex-1 flex flex-col justify-end h-full '>
@@ -80,10 +80,10 @@ function HorizontalScrollPanel() {
              {/* <img className='my-2 object-cover w-[100%] ' src={'/images/001.png'}/> */}
           </div>
          <div className='flex-1 flex  items-end justify-between flex-col h-full '>
-            <Content color='#D23723' src={'/images/S/SLambo.jpg'} text={'Qatar, 2024'} className=''/>
+            <Content color='#D23723' src={'/images/S/SLambo.jpg'} text={'Miami, 2024'} className=''/>
             <div className='flex w-full justify-start'>
 
-            <Content src={'/images/S/SSeat.jpg'}  text={'New york, 2008'} className='flelex-col'/>
+            <Content src={'/images/S/SSeat.jpg'}  text={'New york, 2026'} className='flelex-col'/>
             </div>
           </div>
         
