@@ -46,7 +46,7 @@ function Section5() {
     <div className='bg-0 text-black min-h-screen'>
       <Section>
         <GridColumn>
-          <div className='col-span-4 lg:col-span-6  text-white  flex justify-centr itemscenter flex-col my-4'>
+          <div className='col-span-5 lg:col-span-6  text-white  flex justify-centr itemscenter flex-col my-4'>
             <h2 className={'font-custom mb-4 text-heading1 leading-[.9] capitalize text-brand-background'}>
               The Difference Is In The Details
             </h2>
@@ -55,7 +55,7 @@ function Section5() {
             </Paragraph>
             <ArrowRightCircle/>
 </div>
-      <div className='col-span-7 lg:col-span-6'>
+      <div className='col-span-6 lg:col-span-6'>
         <BeforeAfterSlider beforeImage={'/images/seat02Clean.png'} afterImage={'/images/seat02Dirt.png'}/>
       </div>
       

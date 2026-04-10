@@ -26,7 +26,7 @@ export default function Section4() {
         className='relative flex items-center justify-center min-h-screen overflow-hidden'
         style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
         >
-            <div className='border-none absolute inset-0  z-[9] top0 w-full h-[120%] bg-black bg-opacity-45'>
+            <div className='border-none absolute inset-0  z-[9] top0 w-full h-[120%] bg-black bg-opacity-80'>
 
             </div>
         {/* <div className='relative z-10 p-20 mix-blend-difference  text-white w-full h-full flex flex-col justify-between'>
@@ -52,7 +52,7 @@ export default function Section4() {
          <div className="col-span-4 z-[999]">
             <RubberSection defaultY={[120, 0]}>
 
-<img src='https://www.pkaymetal.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F120277%2F1357x1104%2Ff76df880a3%2Fbarsolder-400-asset-2.png&w=384&q=75'/>
+<img src='/images/S/buffer.png'/>
             </RubberSection>
          </div>
            </GridColumn>
