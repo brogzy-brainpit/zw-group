@@ -28,12 +28,12 @@ function HorizontalScrollPanel() {
   return (
    <section ref={ref} className='relative h-[400svh] w-full bg-red400'>
     <div className="sticky top-0 h-screen overflow-hidden">
-      <motion.div style={{x}} className='lg:w-[300vw] flex h-full'>
+      <motion.div style={{x}} className='lg:w-[300vw] w-[900vw] flex h-full'>
         {/* <div className='w-screen h-full bg-purple-800 flex items-center justify-center text7xl text-black'>
           slide 01
         </div> */}
 
-  <div className='lg:w-[100vw] p-5 h-screen  flex gap-[2.8em] items-center justify-center text7xl text-black'>
+  <div className='lg:w-[100vw]  w-[300vw] p-5 h-screen  flex gap-[2.8em] items-center justify-center text7xl text-black'>
           <div className='flex-1 flex  justify-between flex-col h-full '>
             <Content color='#D23723' src={'/images/S/SBentley.jpg'} text={'Porsche, 2024'} className=''/>
             <div className='flex w-full items-end  self-end justify-end'>
@@ -63,7 +63,7 @@ function HorizontalScrollPanel() {
 
          
         </div>
-        <div className='lg:w-[100vw]  p-5 h-screen hidden lg:flex gap-[2.8em] items-center justify-center text7xl text-black'>
+        <div className='lg:w-[100vw] w-[300vw]  p-5 h-screen hidde flex gap-[2.8em] items-center justify-center text7xl text-black'>
           <div className='flex-1 flex  justify-center items-center flex-col h-full '>
             <Content src={'/images/S/SBoot.jpg'} text={'Qatar, 2024'} className=''/>
            
@@ -89,7 +89,7 @@ function HorizontalScrollPanel() {
 
          
         </div>
-        <div className='lg:w-[100vw] p-5 h-screen  flex gap-[2.8em] items-center justify-center text7xl text-black'>
+        <div className='lg:w-[100vw] w-[300vw] p-5 h-screen  flex gap-[2.8em] items-center justify-center text7xl text-black'>
           <div className='flex-1 flex  justify-between flex-col h-full '>
             <Content src={'/images/S/STire.jpg'} text={'Qatar, 2024'} className=''/>
             <div className='flex w-full items-end  self-end justify-end'>
@@ -137,7 +137,7 @@ const Content=({className='',color='#000',text,src='/images/003.png'})=>{
               {text}
             </h2>
             {/* <img className={` ${className} max-w-[30em] my-2 object-cover  h-[40svh]`} src={src}/> */}
-             <ImageEffect color={color} className='max-w-[30em] my-2 object-cover  h-[40svh]' img={src} />
+             <ImageEffect height='40vh' color={color} className='max-w-[30em] my-2 object-cover  h-[20svh]' img={src} />
               </div>
   )
 }

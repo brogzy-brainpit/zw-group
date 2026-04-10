@@ -13,6 +13,7 @@ import FAQS from '@/components/FAQS';
 import Newsletter from '@/components/Newsletter';
 import NewsletterModal from '@/components/NewsletterModal';
 import HorizontalScrollPanel from '@/components/HorizontalScrollPanel';
+import Review from '@/components/Review';
 
 
 function PageContent() {
@@ -44,6 +45,7 @@ function PageContent() {
       <Section5/>
       <Section3/>
       <Section4/>
+      <Review/>
       <FAQS/>
       <Newsletter/>
     </SmoothScroll>
