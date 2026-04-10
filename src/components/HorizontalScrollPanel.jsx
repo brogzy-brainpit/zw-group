@@ -4,6 +4,7 @@ import { useScroll, useTransform ,motion, useSpring} from 'framer-motion'
 import React, { useRef } from 'react'
 import ImageEffect from './ImageEffect';
 import SlideUpText from '@/effects/SlideUpText';
+import { useMediaQuery } from 'react-responsive';
 
 
 export function mergeRefs(...refs) {
@@ -17,18 +18,19 @@ export function mergeRefs(...refs) {
 }
 function HorizontalScrollPanel() {
   const ref=useRef(null)
+   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   // const {scrollYProgress}=useScroll({target:ref,offset:['start start','end end']})
   const {scrollYProgress}=useScroll({target:ref,offset:['start start','end end']})
   scrollYProgress.on('change',(progress)=>{
     console.log(progress)
 
   })
-  const x1= useTransform(scrollYProgress,[0,1],['30%','-66.6667%']);
+  const x1= useTransform(scrollYProgress,[0,1],[isTabletOrMobile?'0%':'30%','-66.6667%']);
   const x= useSpring(x1,{stiffness:300,damping:30,mass:.3});
   return (
    <section ref={ref} className='relative h-[400svh] w-full bg-red400'>
     <div className="sticky top-0 h-screen overflow-hidden">
-      <motion.div style={{x}} className='lg:w-[300vw] w-[900vw] flex h-full'>
+      <motion.div style={{x}} className='lg:w-[300vw] w-[1200vw] flex h-full'>
         {/* <div className='w-screen h-full bg-purple-800 flex items-center justify-center text7xl text-black'>
           slide 01
         </div> */}
