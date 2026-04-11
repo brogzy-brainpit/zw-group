@@ -65,7 +65,9 @@ module.exports = {
         'brand-accent':"#EAEDF4", //accent for links, hover state 
         'brand-secondary':"#171717", //blue best
         'brand-background-dark':"#1c2218",
-        'brand-background':"#D23723",
+        'brand-background':"#b91c1c",
+        // 'brand-background':"#D23723",
+        
         'brand-backgroundz':"#CFCFCF",
       },
       fontFamily:{

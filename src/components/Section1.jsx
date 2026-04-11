@@ -101,7 +101,7 @@ function Section1({preLoaderOut}) {
  
    
   return (
-    <div className='bg-brand-text-dark  single-vimeo-background relative w-full min-h-svh overflow-hidden single-vimeo-background'>
+    <div className='bg-brand-text-dark  single-vimeo-background relative w-full h-svh overflow-hidden single-vimeo-background'>
       <LandingVideo preLoaderOut={preLoaderOut} link={"/videos/hero.mp4"}/>
      {/* <MotionImage transition={{duration:2.8,delay:0.4,ease:[1, 0.24, 0.80, 1]}} initial={{scale:1.3}} animate={{scale:preLoaderOut?1:1.3}} exit={{scale:1.3}}
   src={hero}
@@ -132,11 +132,8 @@ function Section1({preLoaderOut}) {
   </div>
 </GridColumn>
 
-
-
-
 <GridColumn className={' border- border-blu-300 py-4'}>
-    <div className='col-span-full bg-slate500  flex items-end w-full '>
+    <div className='col-span-full  bg-slate500  flex items-en items-start w-full '>
       <div className='flex flex-wrap w-full' >
 
           <motion.div initial={{scale:0}} animate={{scale:1,transition:{delay:2,duration:0.6,ease}}}  exit={{scale:0,transition:{delay:0.1,duration:0.6,ease}}} className='flex flex-wrap w-full'>
