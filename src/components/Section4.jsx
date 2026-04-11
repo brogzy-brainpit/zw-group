@@ -39,13 +39,13 @@ export default function Section4() {
            <GridColumn className='bg-pink500'>
         
            <div className="col-span-4 lg:order-last">
-            <Heading1 className='font-custom text-white capitalize'>our product</Heading1>
+            <Heading1 className='font-custom text-white capitalize'>our Tools</Heading1>
          </div>
           <div className="col-span-4 hidden lg:block">
             <Heading2 className='leading-none font-custom text-white capitalize'>
-                <span className='text-[#D23723]'>Soldering products</span>
+                <span className='text-[#D23723]'>Cleaning products</span>
                 <br/>
-                 MS2 Dross Eliminators
+                 Buffing & Polishing
             </Heading2>
 
          </div>
@@ -62,7 +62,7 @@ export default function Section4() {
             {/* <h2 className='font-body text-para text-5xl text-white capitalize'> */}
                <Paragraph className={'text-white'}>
                 <SlideUpElement  gap='4px' once={false}>
- {"Metal is treated inside high temperature furnaces using P. Kay's proprietary processing and recycling techniques.. When the recycling process is complete, these purified solders meet our customer provided specifications".split(' ').map((word)=>{
+ {"We use professional-grade buffing machines as part of our exterior detailing process to restore your vehicle’s shine and smooth finish. The machine gently polishes the paint surface, removing light scratches, swirl marks, and oxidation.".split(' ').map((word)=>{
       return (
     <span className=''>{word}</span>
       )

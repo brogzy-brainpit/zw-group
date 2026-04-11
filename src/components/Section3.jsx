@@ -30,16 +30,17 @@ const slides =[
       duration:'2-2.5 Hrs',
       img:'/images/exValet.jpg',
       y:-70,
-      desc:"The bulk cement trailer is suitable for the transportation and air pressure unloading of dry materials such as fly ash, cement, lime powder and ore powder with a particle diameter of not more than 0.1mm. When the discharge height reaches 15m, the horizontal conveying distance can reach 5m. "
+      desc:"Professional exterior wash and detailing that restores shine and protects your paint. We remove dirt, grime, and buildup, leaving your car clean, polished, and road-ready."
     },
      {text:'Interior Valet',
       reverse:true,
       duration:'2-2.5 Hrs',
       img:'/images/inValet.jpeg',
       y:-120,
-      desc:"ZW Group fuel tanker trailer can be designed in any capacities: 30 cubics, 40 cubics, 50 cubics, etc. Our fuel tanker trailer use different materials: carbon steel, stainless steel, aluminium alloy."
+      desc:"Comprehensive interior cleaning and detailing that refreshes your car's cabin. We deep clean carpets, seats, and surfaces, eliminating dirt, stains, and odors for a fresh and comfortable driving experience."
     }, {text:'Full Valet',reverse:false,
-      duration:'4 Hrs',img:'/images/rangeRoverWash.jpg',y:-170,desc:"1.The oil tank semi-trailer should have a reliable grounding device and a protective device that forms a static conductive path between the oil tank semi-trailer and the liquid equipment."
+      duration:'4 Hrs',img:'/images/rangeRoverWash.jpg',y:-170,
+      desc:"Complete interior and exterior detailing that restores your car to showroom condition. We wash, wax, and polish the exterior while deep cleaning the interior for a comprehensive refresh that shines inside and out."
     }
   ]
   return (
@@ -66,7 +67,7 @@ const slides =[
         
     <h2 className="!mt-0 text-heading2 font-custom text-neutral-200">
     <SlideUpElement once={false} margin='-100px' gap='6px' >
-    {"At Milans Detailing & Valeting, we deliver top-tier car care with precision, from quick refreshes to deep cleaning, paint correction, and ceramic coating.".split(' ').map((word)=>{
+    {"At Shine Carwash Mobile, we deliver top-tier car care with precision, from quick refreshes to deep cleaning, paint correction, and ceramic coating.".split(' ').map((word)=>{
       return (
     <span className=''>{word}</span>
       )

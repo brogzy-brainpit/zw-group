@@ -110,7 +110,7 @@ const [pageName,setPageName]= useState(router.pathname)
 
         <meta
           name="description"
-          content="Premium mobile car detailing in Miami, FL. Shine Carwash Mobile delivers expert interior and exterior detailing to restore shine, comfort, and showroom-quality results. Book today."
+          content="Premium mobile car detailing in Miami, FL. Interior and exterior cleaning that restores shine, comfort, and showroom-quality results. Book today."
         />
 
         <meta

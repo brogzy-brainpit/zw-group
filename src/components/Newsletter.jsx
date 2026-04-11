@@ -53,7 +53,7 @@ function Newsletter() {
                 value={email}
             onChange={(e) => setEmail(e.target.value)}
                 className='p-4 border border-brand-background my2.5 flex-1' placeholder='enter email '/>
-               <div onClick={handleSubmit} className="font-body my2.5 flex max-w-fit items-center border border-brand-background bg-brand-background whitespace-nowrap">
+               <div onClick={handleSubmit} className="font-body my2.5 text-white flex max-w-fit items-center border border-brand-background bg-brand-background whitespace-nowrap">
  {/* <a href='/' className=' text-black flex w-full justify-between items-center transition-all duration-300 ease-out'> */}
   <span className="p-4 block capitalize"> {loading ? "Subscribing..." : "Subscribe"}</span>
   {/* <span className="inline-fle p-4 block lg:hidden capitalize">contact us</span> */}
