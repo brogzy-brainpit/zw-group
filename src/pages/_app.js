@@ -124,8 +124,8 @@ const [pageName,setPageName]= useState(router.pathname)
           property="og:description"
           content="Restore your car to showroom condition with Shine Carwash Mobile. Professional interior & exterior detailing."
         />
-        <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
-        <meta property="og:url" content="https://yourdomain.com" />
+        <meta property="og:image" content="http://res.cloudinary.com/brainpit/image/upload/v1775918888/vjmy1mrnjmnxeixuxhnq.png" />
+        <meta property="og:url" content="https://shine-carwash-mobile.vercel.app/" />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
@@ -135,7 +135,7 @@ const [pageName,setPageName]= useState(router.pathname)
           name="twitter:description"
           content="Expert mobile car detailing in Miami. Interior & exterior services that bring back your car’s shine."
         />
-        <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+        <meta name="twitter:image" content="http://res.cloudinary.com/brainpit/image/upload/v1775918888/vjmy1mrnjmnxeixuxhnq.png" />
 
         {/* Geo */}
         <meta name="geo.region" content="US-FL" />
@@ -149,8 +149,8 @@ const [pageName,setPageName]= useState(router.pathname)
               "@context": "https://schema.org",
               "@type": "AutoWash",
               name: "Shine Carwash Mobile",
-              url: "https://yourdomain.com",
-              image: "https://yourdomain.com/og-image.jpg",
+              url: "https://shine-carwash-mobile.vercel.app/",
+              image: "http://res.cloudinary.com/brainpit/image/upload/v1775918888/vjmy1mrnjmnxeixuxhnq.png",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "250 NE 25th St",
